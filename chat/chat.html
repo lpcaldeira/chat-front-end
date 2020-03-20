@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel='stylesheet' type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel='stylesheet' type="text/css">
+
+    <link rel='stylesheet' id='sb-main-css-css' href='css/main.css' type='text/css' media='all' />
+    <!-- <script type='text/javascript' src='js/jquery.js'></script> -->
+    <!-- <script type='text/javascript' src='js/main.js'></script> -->
+
+</head>
+
+<body>
+
+    <div id="sb-main" class="sb-main sb-push sb-flash" style="display:none">
+        <div class="sb-cnt-global sb-chat-cnt sb-avatars">
+            <div class="sb-chat col-xs-12">
+                <div class="sb-chat-header sb-chat-header-agent">
+                    <!-- <div class="sb-chat-header-top">
+                        <div class="sb-chat-header-close" style="cursor: pointer;">
+                            &times;
+                        </div>
+                    </div> -->
+                    <div class="sb-chat-header sb-chat-logo">
+                        <!-- Eletro Store -->
+                        <img src="img/logo_branco.png" aria-hidden="true" alt="Arte da capa" itemprop="image">
+                        <!-- <div class="sb-chat-header-sub">Sempre prontos para lhe auxiliar.</div> -->
+                    </div>
+                </div>
+                <div class="sb-chat-list" id="conversa_anterior">
+
+                    <div class="sb-chat-list" style="overflow-x: hidden; overflow-y: hidden; width: auto; height: 250px;" id="conversa">
+
+                        <!-- Mensagem bot -->
+                        <div class="sb-card">
+                            <div class="sb-thumb">
+                                <img src="img/atendente.png">
+                            </div>
+                            <div class="sb-card-cnt">
+                                <div class="sb-message">Seja bem vindo ao atendimento automático da S3nd.</div>
+                                <div class="sb-time">18/04/2019 às 12:53</div>
+                            </div>
+                        </div>
+
+                        <!-- Cliente -->
+                        <div class="sb-card sb-card-right">
+                            <div class="sb-card-cnt">
+                                <div class="sb-message">Este é um exemplo de pergunta para a S3nd do seu cliente Cláudio.</div>
+                                <div class="sb-time">18/04/2019 às 12:53</div>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem bot -->
+                        <div class="sb-card">
+                            <div class="sb-thumb">
+                                <img src="img/atendente.png">
+                            </div>
+                            <div class="sb-card-cnt">
+                                <div class="sb-message">Esta é uma resposta para o seu cliente Cláudio.</div>
+                                <div class="sb-time">18/04/2019 às 12:53</div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel -->
+                        <!-- <div class="owl-carousel owl-theme" style="margin-bottom: 20px; width: 100% !important; float: left;"> -->
+                        <div class="owl-carousel owl-theme" style="margin-bottom: 20px; width: 100% !important; float: left;">
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Primeiro slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">CHATBOT</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Tenha chatbots no seu site, landing pages, facebook messenger e campanhas diversas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">QUERO TER UM CHATBOT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Second slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">SMS</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Envie notificações via SMS para usuários que você possui telefone de contato.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">SMS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Terceiro slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">E-mail</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Envie e-mails no formato correto para impactar seus clientes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">Adquirir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Terceiro slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">Outras opções</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Entre em contato conosco para descobrir qual a melhor plataforma para sua empresa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">Entrar em contato</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Primeiro slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">CHATBOT</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Tenha chatbots no seu site, landing pages, facebook messenger e campanhas diversas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">QUERO TER UM CHATBOT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Second slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">SMS</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Envie notificações via SMS para usuários que você possui telefone de contato.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">SMS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Terceiro slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">E-mail</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Envie e-mails no formato correto para impactar seus clientes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">Adquirir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img id="carousel-item-img" src="https://i.imgur.com/A1wilrA.jpg" alt="Terceiro slide" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-text">
+                                        <h5 id="card-title" class="card-title">Outras opções</h5>
+                                        <div class="card-text-content">
+                                            <p id="card-text">Entre em contato conosco para descobrir qual a melhor plataforma para sua empresa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-actions">
+                                        <a id="card-action" class="card-action action-text">Entrar em contato</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Mensagem bot -->
+                        <div class="sb-card">
+                            <div class="sb-thumb">
+                                <img src="img/atendente.png">
+                            </div>
+                            <div class="sb-card-cnt">
+                                <div class="sb-message">Esta é uma pergunta para o Claudio selecionar umas das opções.</div>
+                                <div class="sb-time">18/04/2019 às 12:54</div>
+                            </div>
+                        </div>
+
+                        <!-- buttons -->
+                        <div class="sd-card">
+                            <div class="button-group">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12" style="transform: translate3d(0px, 0px, 0px); padding-left: 7px; padding-right: 7px;">
+                                        <button class="button action-text" data-texto="CHATBOT">CHATBOT</button>
+                                        <button class="button action-text" data-texto="SMS">SMS</button>
+                                        <button class="button action-text" data-texto="E-mails">E-mails</button>
+                                        <button class="button action-text" data-texto="Outras ofertas">Outras ofertas</button>
+                                        <button class="button action-text" data-texto="Outras ofertas 2">Outras ofertas 2</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- tables -->
+                        <div class="sd-card">
+                            <div class="tables-group">
+                                <a class="table-action action-text" data-label="Chatbot">Chatbot</a>
+                                <a class="table-action action-text" data-label="SMS">SMS</a>
+                                <a class="table-action action-text" data-label="E-mails">E-mails</a>
+                                <a class="table-action action-text" data-label="Outras opções">Outras opções</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="sb-clear"></div>
+
+                <div class="sb-chat-editor" style="padding:5px 7px 0px 7px; border-top:1px solid #F2F2F2; border-bottom:1px solid #F2F2F2;">
+                    <form onSubmit="return false" id="form_chat" enctype="multipart/form-data">
+                        <div class="sb-chat-textarea">
+                            <textarea id="mensagemTextarea" name="mensagem" aria-label="Digite sua mensagem..." placeholder="Digite sua mensagem..." style="width: 100%;" tabindex="0"></textarea>
+                        </div>
+                        <svg focusable="false" class="sb-chat-attach-file" viewBox="0 0 16 18">
+                            <path d="M14.154 6.918l-.004.003.001-.004-3.287 3.286-.006-.005-3.574 3.574c-.016.017-.03.036-.048.053l-.05.047-.043.041v-.002c-1.167 1.07-2.692 1.331-3.823.2-1.13-1.13-.89-2.677.18-3.843l-.005-.004.074-.073.016-.018c.006-.005.012-.009.017-.016l6.053-6.053.761.76-6.053 6.054-.029.028v.001l-.005.004-.073.074c.011-.01.025-.018.035-.03-.688.75-.93 1.636-.21 2.356.72.72 1.583.456 2.333-.232l-.03.034.04-.042.01-.008.008-.009.033-.03.031-.034.01-.009.007-.009 5.004-5.003.005.006 1.858-1.859c1.223-1.218 1.51-2.913.291-4.132C12.462.806 10.414.74 9.195 1.958L2.248 8.905c.003 0 .006-.002.008-.004-1.625 1.667-1.542 4.43.103 6.074 1.646 1.646 4.474 1.795 6.141.17-.003.002-.004.008-.008.012l.047-.047 6.053-6.054.042-.042.743.78-.025.021.001.002-6.05 6.05-.002.002-.002.001-.046.046h-.002c-2.094 2.04-5.578 1.894-7.652-.18-2.049-2.049-2.15-5.407-.183-7.505l-.006-.005h-.002l.076-.078 6.943-6.944.003-.002.004-.005c1.641-1.64 4.367-1.574 6.008.066 1.64 1.642 1.353 4.014-.288 5.655z" fill-rule="evenodd">
+                            </path>
+                        </svg>
+                        <svg focusable="false" class="sb-chat-btn-submit" viewBox="0 0 15 16">
+                            <g transform="translate(-24.000000, -12.000000)">
+                                <path d="M25.4036262,27.3409362 C24.4176893,27.8509036 23.8195834,27.3951055 24.0683403,26.3201996 L25.0887779,21.910776 C25.2131242,21.3734618 25.7510472,20.8884231 26.3078778,20.8254187 L32.503417,20.1244045 C34.151155,19.9379658 34.1569707,19.6389088 32.503417,19.4549971 L26.3078778,18.7659164 C25.7589338,18.7048617 25.2129433,18.217839 25.0887779,17.6798715 L24.0683403,13.2586546 C23.8198614,12.1820783 24.408944,11.7182276 25.4036262,12.2327184 L38.22304,18.8634497 C39.208977,19.373417 39.2177223,20.1957141 38.22304,20.7102049 L25.4036262,27.3409362 Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <form id="formFile">
+                            <input type="file" id="file" name="file" style="display: none;" />
+                        </form>
+                    </form>
+                </div>
+
+            </div>
+            <div class="sb-chat-btn">
+                <img class="sb-chat-icon" src="img/chat.svg" />
+                <img class="sb-close-icon" src="img/close.svg" />
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type='text/javascript' src='js/main.js?versao=1.002'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" data-cover></script>
+    <footer>
+        <script>
+            // Este aqui só serve para exibir o carousel inicial
+            // Pode ser excluído quando for para produção
+            $('.owl-carousel').owlCarousel({
+                animateOut: 'slideOutDown',
+                animateIn: 'flipInX',
+                loop: true,
+                items: 3,
+                center: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+    </footer>
+
+</body>
+
+</html>

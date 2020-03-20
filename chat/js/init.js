@@ -1,0 +1,14 @@
+var iframe = document.createElement('iframe');
+iframe.style.border = "none";
+iframe.style.overflow = "hidden";
+iframe.style.position = "fixed";
+iframe.style.bottom = "0";
+iframe.style.right = "0";
+iframe.style.zIndex = "999995";
+iframe.allow = "encrypted-media";
+iframe.width = "340";
+iframe.height = "600";
+iframe.frameborder = "0";
+iframe.scrolling = "no";
+iframe.src = 'http://localhost:8080/chat_entrega_final/chat/chat.html';
+document.body.appendChild(iframe);
